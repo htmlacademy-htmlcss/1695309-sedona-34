@@ -23,25 +23,19 @@ body {
   color: #000000;
 }
 
+/* Index page */
+
 .page-header {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
-.navigation-list,
-.advantages-list,
-.socials-list,
-.breadcrumbs,
-.filter-list,
-.results-view-list,
-.results-list,
-.pagination-list {
+.list {
   list-style-type: none;
 }
 
-.navigation-list a {
+.navigation-link {
   color: inherit;
   text-align: center;
   text-decoration: none;
@@ -73,7 +67,6 @@ body {
 
 .advantages-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
 }
 
@@ -81,26 +74,26 @@ body {
   color: #333333;
 }
 
-.section {
+.search-section {
   text-align: center;
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-}
-
-.subscription-section {
-  background-image: url("../images/subscription-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .section-description {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.subscription-section {
+  background-image: url("../images/subscription-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .button {
@@ -113,21 +106,28 @@ body {
 
 .button-section {
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.section a {
+.button-search {
   color: inherit;
   text-align: center;
   text-decoration: none;
 }
 
-.input {
-  font-family: "PT Sans", sans-serif;
+.results a {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.input-text {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .phone {
@@ -154,19 +154,18 @@ body {
 }
 
 .catalog-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   line-height: 78px;
-  font-weight: 700;
 }
 
 .button-reset {
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
-  line-height: 21px;
+  line-height: inherit;
   text-decoration: none;
   color: #ffffff;
 }
@@ -177,21 +176,33 @@ body {
   line-height: 26px;
 }
 
+.results {
+  text-align: center;
+}
+
+.sort-list {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .results-title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .score {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .results-number {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
