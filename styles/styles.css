@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -27,8 +27,6 @@ body {
 
 .page-header {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 
 .list {
@@ -36,6 +34,8 @@ body {
 }
 
 .navigation-link {
+  font-size: 20px;
+  line-height: 26px;
   color: inherit;
   text-align: center;
   text-decoration: none;
@@ -70,7 +70,14 @@ body {
   line-height: 28px;
 }
 
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .advantages-description {
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
@@ -176,6 +183,11 @@ body {
   line-height: 26px;
 }
 
+.option-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .results {
   text-align: center;
 }
@@ -190,6 +202,16 @@ body {
 .results-title {
   font-size: 24px;
   line-height: 28px;
+}
+
+.results-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.results-price {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .score {
