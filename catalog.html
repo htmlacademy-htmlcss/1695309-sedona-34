@@ -16,7 +16,7 @@
             <li class="navigation-item"><a class="navigation-link current" current>Гостиницы</a></li>
           </ul>
         </nav>
-        <ul class="navigation-list navigation-user list">
+        <ul class="navigation-user list">
           <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span><span>12</span></a></li>
           <li class="navigation-item"><a href="#" class="navigation-link button button-want">Хочу сюда!</a></li>
@@ -100,7 +100,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <div class="button-wrap">
+                <div class="button-form-wrap">
                   <button type="submit" class="button button-apply">Применить</button>
                   <input type="reset" class="button-reset"></input>
                 </div>
@@ -111,7 +111,7 @@
 
         <section class="results">
           <div class="header-wrapper">
-            <h2 class="section-title">Найдено гостиниц: <span>38</span></h2>
+            <h2 class="section-title results-section-title">Найдено гостиниц: <span>38</span></h2>
             <select class="sort-list" name="sort-by">
               <option class="sort-option" value="low-to-high">Сначала дешёвые</option>
               <option class="sort-option" value="high-to-low">Сначала дорогие</option>
@@ -142,7 +142,7 @@
                 <a href="#" class="button button-more">Подробнее</a>
                 <a href="#" class="button button-favorite">В избранное</a>
               </p>
-              <p class="button-wrap">
+              <p class="info-wrap">
                 <span class="hotelstars"></span>
                 <span class="score">Рейтинг: 8,5</span>
               </p>
@@ -158,7 +158,7 @@
                 <a href="#" class="button button-more">Подробнее</a>
                 <a href="#" class="button button-favorite button-active">В избранном</a>
               </p>
-              <p class="button-wrap">
+              <p class="info-wrap">
                 <span class="hotelstars"></span>
                 <span class="score">Рейтинг: 9,2</span>
               </p>
@@ -174,7 +174,7 @@
                 <a href="#" class="button button-more">Подробнее</a>
                 <a href="#" class="button button-favorite">В избранное</a>
               </p>
-              <p class="button-wrap">
+              <p class="info-wrap">
                 <span class="hotelstars"></span>
                 <span class="score">Рейтинг: 6,9</span>
               </p>
@@ -190,7 +190,7 @@
                 <a href="#" class="button button-more">Подробнее</a>
                 <a href="#" class="button button-favorite">В избранное</a>
               </p>
-              <p class="button-wrap">
+              <p class="info-wrap">
                 <span class="hotelstars"></span>
                 <span class="score">Рейтинг: 5,0</span>
               </p>
@@ -208,7 +208,7 @@
               <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
             </ol>
 
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <form action="https://echo.htmlacademy.ru/" method="post" class="results-form">
               <label>
                 Гостиниц на странице:
                 <select class="results-number" name="results-number" id="">
@@ -260,8 +260,6 @@
           </a>
         </div>
       </footer>
-
     </div>
-
   </body>
 </html>
