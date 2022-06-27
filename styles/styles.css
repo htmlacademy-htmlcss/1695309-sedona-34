@@ -874,23 +874,27 @@ body {
   color: #ededed;
 }
 
+.button-subscibe:hover,
 .button-apply:hover,
 .button-favorite:hover {
   background-color: #68A2CA;
 }
 
+.button-subscibe:focus,
 .button-apply:focus,
 .button-favorite:focus {
   background-color: #68A2CA;
   outline: none;
 }
 
+.button-subscibe:active,
 .button-apply:active,
 .button-favorite:active {
   background-color: #82B3D3;
   color: #ededed;
 }
 
+.button-subscibe:disabled,
 .button-apply:disabled {
   background-color: #e5e5e5;
 }
