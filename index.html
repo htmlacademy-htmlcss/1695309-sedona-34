@@ -11,15 +11,32 @@
         <img src="./images/logo.svg" width="139" height="70" alt="Логотип Седоны" class="logo">
         <nav class="navigation">
           <ul class="navigation-list list">
-            <li class="navigation-item"><a class="navigation-link current" current>Главная</a></li>
-            <li class="navigation-item"><a href="#" class="navigation-link">О Седоне</a></li>
-            <li class="navigation-item"><a href="./catalog.html" class="navigation-link">Гостиницы</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link current" current>Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a href="./catalog.html" class="navigation-link">Гостиницы</a>
+            </li>
           </ul>
         </nav>
         <ul class="navigation-user list">
-          <li class="navigation-item"><a href="#" class="navigation-link search-link"><span class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation-item"><a href="#" class="navigation-link favorite-link"><span class="visually-hidden">Избранное</span></a></li>
-          <li class="navigation-item"><a href="#" class="navigation-link button button-want">Хочу сюда!</a></li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link search-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link favorite-link">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favotite-number">12</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link button button-want">Хочу сюда!</a>
+          </li>
         </ul>
       </header>
 
@@ -172,6 +189,51 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <div class="modal-header">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+
+          <label class="modal-label" for="arrive">Дата Заезда:</label>
+          <div class="input-date-wrap">
+            <input class="input-date" type="text" id="arrive" name="arrival-date" value="27 апреля 2020">
+            <span class="calendar-icon"></span>
+          </div>
+          <p class="accept-text error">Мы не можем отправить вас в прошлое.</p>
+
+          <label class="modal-label" for="leave">Дата Выезда:</label>
+          <div class="input-date-wrap">
+            <input class="input-date" type="text" id="leave" name="arrival-date" value="1 сентября 2021">
+            <span class="calendar-icon"></span>
+          </div>
+          <p class="accept-text">На эти даты есть свободные номера. Пока есть.</p>
+
+          <label class="modal-label" for="adult-number">Взрослые:</label>
+          <div class="input-number-wrap">
+            <input class="guest-number" id="adult-number" name="number" type="number" value="2">
+            <span class="number-operator"></span>
+          </div>
+
+          <span class="kid-label-tooltip kid-label-icon">
+            <label class="modal-label guest-kid" for="kids-number">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button"></button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+            </span>
+          </span>
+
+          <div class="input-number-wrap">
+            <input class="guest-number" id="kids-number" name="number" type="number" value="1">
+            <span class="number-operator"></span>
+          </div>
+
+          <a href="./catalog.html" class="button-search modal-button">Найти</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
