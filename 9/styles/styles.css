@@ -535,6 +535,10 @@ body {
   appearance: none;
 }
 
+.input-number {
+  -moz-appearance: textfield;
+}
+
 .start-number {
   border-right: none;
   border-radius: 4px 0 0 4px;
@@ -726,6 +730,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 8px center;
   color: #333333;
+  background-color: transparent;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -933,6 +938,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 8px center;
   color: #333333;
+  background-color: transparent;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1036,9 +1042,18 @@ body {
   letter-spacing: -0.9px;
 }
 
+.input-date::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.input-date::-moz-placeholder {
+  opacity: 1;
+}
+
 .input-date::placeholder {
   color: #000000;
 }
+
 
 .calendar-button {
   position: absolute;
@@ -1122,6 +1137,10 @@ body {
 .guest-number::-webkit-inner-spin-button {
   margin: 0;
   appearance: none;
+}
+
+.guest-number {
+  -moz-appearance: textfield;
 }
 
 .kid-label-tooltip {
@@ -1316,6 +1335,7 @@ body {
 
 .view-button:focus {
   border: 2px solid #68a2ca;
+  outline: none;
 }
 
 .view-button:active {
