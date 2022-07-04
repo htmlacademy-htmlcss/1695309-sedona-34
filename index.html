@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
@@ -124,7 +125,7 @@
         <section class="search-section">
           <div class="search-text">
             <h2 class="section-title">Заинтересовались?</h2>
-              <p class="section-description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения&nbsp;гостиниц&nbsp;в&nbsp;Седоне</p>
+              <p class="section-description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения&nbsp;гостиниц&nbsp;в&nbsp;Седоне&nbsp;&nbsp;</p>
               <a href="./catalog.html" class="button-section button-search">Поиск гостиницы в Седоне</a>
           </div>
         </section>
@@ -135,8 +136,8 @@
             <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" class="input-text" name="email" placeholder="Ваш e-mail">
-            <button class="button-section button-subscibe" type="submit">Подписаться</button>
+            <input type="email" class="input-text" name="email" placeholder="Ваш e-mail" required>
+            <button class="button-section button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -197,22 +198,46 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container modal-container-close">
-        <div class="modal">
-          <div class="modal-header">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button">
-              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1143 4.29231L15.822 3L10.1143 8.70769L4.40657 3L3.11426 4.29231L8.82195 10L3.11426 15.7077L4.40657 17L10.1143 11.2923L15.822 17L17.1143 15.7077L11.4066 10L17.1143 4.29231Z" fill="currentColor"/>
-              </svg>
-              <span class="visually-hidden">Закрыть</span>
-            </button>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.1143 4.29231L15.822 3L10.1143 8.70769L4.40657 3L3.11426 4.29231L8.82195 10L3.11426 15.7077L4.40657 17L10.1143 11.2923L15.822 17L17.1143 15.7077L11.4066 10L17.1143 4.29231Z" fill="currentColor"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-label" for="arrive">Дата Заезда:</label>
+          <div class="input-date-wrap">
+          <input class="input-date" type="text" id="arrive" name="arrival-date" placeholder="27 апреля&ensp;2020" required>
+          <button class="calendar-button" type="button">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.86426 12C8.16426 12 8.36426 11.8 8.36426 11.5C8.36426 11.2 8.16426 11 7.86426 11C7.56426 11 7.36426 11.2 7.36426 11.5C7.36426 11.8 7.56426 12 7.86426 12Z" fill="currentColor"/>
+              <path d="M17.1143 4H15.1143V2H14.1143V4H6.11426V2H5.11426V4H3.11426C2.51426 4 2.11426 4.4 2.11426 5V16C2.11426 16.5 2.51426 17 3.11426 17H17.1143C17.6143 17 18.1143 16.5 18.1143 16V5C18.1143 4.4 17.6143 4 17.1143 4ZM17.1143 16H3.11426V9H17.1143V16ZM3.11426 8V5H5.11426V7H6.11426V5H14.1143V7H15.1143V5H17.1143V8H3.11426Z" fill="currentColor"/>
+              <path d="M10.1143 12C10.4143 12 10.6143 11.8 10.6143 11.5C10.6143 11.2 10.4143 11 10.1143 11C9.81426 11 9.61426 11.2 9.61426 11.5C9.61426 11.8 9.81426 12 10.1143 12Z" fill="currentColor"/>
+              <path d="M12.3643 12C12.6643 12 12.8643 11.8 12.8643 11.5C12.8643 11.2 12.6643 11 12.3643 11C12.0643 11 11.8643 11.2 11.8643 11.5C11.8643 11.8 12.0643 12 12.3643 12Z" fill="currentColor"/>
+              <path d="M7.86426 13C7.56426 13 7.36426 13.2 7.36426 13.5C7.36426 13.8 7.56426 14 7.86426 14C8.16426 14 8.36426 13.8 8.36426 13.5C8.36426 13.2 8.16426 13 7.86426 13Z" fill="currentColor"/>
+              <path d="M5.61426 12C5.91426 12 6.11426 11.8 6.11426 11.5C6.11426 11.2 5.91426 11 5.61426 11C5.31426 11 5.11426 11.2 5.11426 11.5C5.11426 11.8 5.31426 12 5.61426 12Z" fill="currentColor"/>
+              <path d="M5.61426 13C5.31426 13 5.11426 13.2 5.11426 13.5C5.11426 13.8 5.31426 14 5.61426 14C5.91426 14 6.11426 13.8 6.11426 13.5C6.11426 13.2 5.91426 13 5.61426 13Z" fill="currentColor"/>
+              <path d="M10.1143 13C9.81426 13 9.61426 13.2 9.61426 13.5C9.61426 13.8 9.81426 14 10.1143 14C10.4143 14 10.6143 13.8 10.6143 13.5C10.6143 13.2 10.4143 13 10.1143 13Z" fill="currentColor"/>
+              <path d="M12.3643 13C12.0643 13 11.8643 13.2 11.8643 13.5C11.8643 13.8 12.0643 14 12.3643 14C12.6643 14 12.8643 13.8 12.8643 13.5C12.8643 13.2 12.6643 13 12.3643 13Z" fill="currentColor"/>
+              <path d="M14.6143 12C14.9143 12 15.1143 11.8 15.1143 11.5C15.1143 11.2 14.9143 11 14.6143 11C14.3143 11 14.1143 11.2 14.1143 11.5C14.1143 11.8 14.3143 12 14.6143 12Z" fill="#d6d5d5"/>
+              <path d="M14.6143 13C14.3143 13 14.1143 13.2 14.1143 13.5C14.1143 13.8 14.3143 14 14.6143 14C14.9143 14 15.1143 13.8 15.1143 13.5C15.1143 13.2 14.9143 13 14.6143 13Z" fill="currentColor"/>
+            </svg>
+            <span class="visually-hidden">Выбрать в календаре</span>
+          </button>
           </div>
 
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-label" for="arrive">Дата Заезда:</label>
-            <div class="input-date-wrap">
-            <input class="input-date" type="text" id="arrive" name="arrival-date" placeholder="27 апреля&ensp;2020">
+          <p class="accept-text error">Мы не можем отправить вас в прошлое.</p>
+
+          <label class="modal-label" for="leave">Дата Выезда:</label>
+          <div class="input-date-wrap">
+            <input class="input-date" type="text" id="leave" name="arrival-date" placeholder="1 сентября&ensp;2021" required>
             <button class="calendar-button" type="button">
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.86426 12C8.16426 12 8.36426 11.8 8.36426 11.5C8.36426 11.2 8.16426 11 7.86426 11C7.56426 11 7.36426 11.2 7.36426 11.5C7.36426 11.8 7.56426 12 7.86426 12Z" fill="currentColor"/>
@@ -229,78 +254,52 @@
               </svg>
               <span class="visually-hidden">Выбрать в календаре</span>
             </button>
-            </div>
+          </div>
 
-            <p class="accept-text error">Мы не можем отправить вас в прошлое.</p>
+          <p class="accept-text">На эти даты есть свободные номера. Пока есть.</p>
 
-            <label class="modal-label" for="leave">Дата Выезда:</label>
-            <div class="input-date-wrap">
-              <input class="input-date" type="text" id="leave" name="arrival-date" placeholder="1 сентября&ensp;2021">
-              <button class="calendar-button" type="button">
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.86426 12C8.16426 12 8.36426 11.8 8.36426 11.5C8.36426 11.2 8.16426 11 7.86426 11C7.56426 11 7.36426 11.2 7.36426 11.5C7.36426 11.8 7.56426 12 7.86426 12Z" fill="currentColor"/>
-                  <path d="M17.1143 4H15.1143V2H14.1143V4H6.11426V2H5.11426V4H3.11426C2.51426 4 2.11426 4.4 2.11426 5V16C2.11426 16.5 2.51426 17 3.11426 17H17.1143C17.6143 17 18.1143 16.5 18.1143 16V5C18.1143 4.4 17.6143 4 17.1143 4ZM17.1143 16H3.11426V9H17.1143V16ZM3.11426 8V5H5.11426V7H6.11426V5H14.1143V7H15.1143V5H17.1143V8H3.11426Z" fill="currentColor"/>
-                  <path d="M10.1143 12C10.4143 12 10.6143 11.8 10.6143 11.5C10.6143 11.2 10.4143 11 10.1143 11C9.81426 11 9.61426 11.2 9.61426 11.5C9.61426 11.8 9.81426 12 10.1143 12Z" fill="currentColor"/>
-                  <path d="M12.3643 12C12.6643 12 12.8643 11.8 12.8643 11.5C12.8643 11.2 12.6643 11 12.3643 11C12.0643 11 11.8643 11.2 11.8643 11.5C11.8643 11.8 12.0643 12 12.3643 12Z" fill="currentColor"/>
-                  <path d="M7.86426 13C7.56426 13 7.36426 13.2 7.36426 13.5C7.36426 13.8 7.56426 14 7.86426 14C8.16426 14 8.36426 13.8 8.36426 13.5C8.36426 13.2 8.16426 13 7.86426 13Z" fill="currentColor"/>
-                  <path d="M5.61426 12C5.91426 12 6.11426 11.8 6.11426 11.5C6.11426 11.2 5.91426 11 5.61426 11C5.31426 11 5.11426 11.2 5.11426 11.5C5.11426 11.8 5.31426 12 5.61426 12Z" fill="currentColor"/>
-                  <path d="M5.61426 13C5.31426 13 5.11426 13.2 5.11426 13.5C5.11426 13.8 5.31426 14 5.61426 14C5.91426 14 6.11426 13.8 6.11426 13.5C6.11426 13.2 5.91426 13 5.61426 13Z" fill="currentColor"/>
-                  <path d="M10.1143 13C9.81426 13 9.61426 13.2 9.61426 13.5C9.61426 13.8 9.81426 14 10.1143 14C10.4143 14 10.6143 13.8 10.6143 13.5C10.6143 13.2 10.4143 13 10.1143 13Z" fill="currentColor"/>
-                  <path d="M12.3643 13C12.0643 13 11.8643 13.2 11.8643 13.5C11.8643 13.8 12.0643 14 12.3643 14C12.6643 14 12.8643 13.8 12.8643 13.5C12.8643 13.2 12.6643 13 12.3643 13Z" fill="currentColor"/>
-                  <path d="M14.6143 12C14.9143 12 15.1143 11.8 15.1143 11.5C15.1143 11.2 14.9143 11 14.6143 11C14.3143 11 14.1143 11.2 14.1143 11.5C14.1143 11.8 14.3143 12 14.6143 12Z" fill="#d6d5d5"/>
-                  <path d="M14.6143 13C14.3143 13 14.1143 13.2 14.1143 13.5C14.1143 13.8 14.3143 14 14.6143 14C14.9143 14 15.1143 13.8 15.1143 13.5C15.1143 13.2 14.9143 13 14.6143 13Z" fill="currentColor"/>
-                </svg>
-                <span class="visually-hidden">Выбрать в календаре</span>
-              </button>
-            </div>
-
-            <p class="accept-text">На эти даты есть свободные номера. Пока есть.</p>
-
-            <label class="modal-label" for="adult-number">Взрослые:</label>
-            <div class="input-number-wrap">
-              <button class="number-operator button-minus">
-                <svg class="minus" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11426 9V11H17.1143V9H3.11426Z" fill="currentColor"/>
-                </svg>
-                <span class="visually-hidden">Уменьшить количество</span>
-              </button>
-              <input class="guest-number" id="adult-number" name="number" type="number" value="2">
-              <button class="number-operator button-plus">
-                <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                </svg>
-                <span class="visually-hidden">Увеличить количество</span>
-              </button>
-            </div>
-
-            <span class="kid-label-tooltip">
-              <label class="modal-label guest-kid" for="kids-number">Дети:</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
-              </span>
-            </span>
-
-            <div class="input-number-wrap">
-              <button class="number-operator button-minus">
-                <svg class="minus" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.11426 9V11H17.1143V9H3.11426Z" fill="currentColor"/>
-                </svg>
-                <span class="visually-hidden">Уменьшить количество</span>
-              </button>
-              <input class="guest-number" id="kids-number" name="number" type="number" value="1">
-              <button class="number-operator button-plus">
-                <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                </svg>
-              </button>
+          <label class="modal-label" for="adult-number">Взрослые:</label>
+          <div class="input-number-wrap">
+            <button class="number-operator button-minus">
+              <svg class="minus" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.11426 9V11H17.1143V9H3.11426Z" fill="currentColor"/>
+              </svg>
+              <span class="visually-hidden">Уменьшить количество</span>
+            </button>
+            <input class="guest-number" id="adult-number" name="number" type="number" value="2">
+            <button class="number-operator button-plus">
+              <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+              </svg>
               <span class="visually-hidden">Увеличить количество</span>
-            </div>
+            </button>
+          </div>
 
-            <button class="modal-button" type="submit">Найти</button>
-          </form>
+          <span class="kid-label-tooltip">
+            <label class="modal-label guest-kid" for="kids-number">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+            </span>
+          </span>
 
-        </div>
+          <div class="input-number-wrap">
+            <button class="number-operator button-minus">
+              <svg class="minus" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.11426 9V11H17.1143V9H3.11426Z" fill="currentColor"/>
+              </svg>
+              <span class="visually-hidden">Уменьшить количество</span>
+            </button>
+            <input class="guest-number" id="kids-number" name="number" type="number" value="1">
+            <button class="number-operator button-plus">
+              <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <span class="visually-hidden">Увеличить количество</span>
+          </div>
+          <button class="modal-button" type="submit">Найти</button>
+        </form>
       </div>
     </div>
   </body>
