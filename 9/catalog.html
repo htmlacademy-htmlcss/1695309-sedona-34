@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Гостиницы Седоны</title>
+    <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1695309-sedona-34/9/">
 </head>
@@ -21,7 +22,7 @@
               <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link current" current>Гостиницы</a>
+              <a class="navigation-link current">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -75,14 +76,14 @@
                   <ul class="filter-list list">
                     <li class="filter-item">
                       <label class="option-label">
-                        <input class="visually-hidden checkbox" type="checkbox" name="pool">
+                        <input class="visually-hidden checkbox" type="checkbox" name="pool" checked>
                         <span class="custom-checkbox"></span>
                         Бассейн
                       </label>
                     </li>
                     <li class="filter-item">
                       <label class="option-label">
-                        <input class="visually-hidden checkbox" type="checkbox" name="parking">
+                        <input class="visually-hidden checkbox" type="checkbox" name="parking" checked>
                         <span class="custom-checkbox"></span>
                         Парковка
                       </label>
@@ -102,7 +103,7 @@
                   <ul class="filter-list list">
                     <li class="filter-item">
                       <label class="option-label">
-                        <input class="visually-hidden radio" type="radio" name="home-type" value="holel">
+                        <input class="visually-hidden radio" type="radio" name="home-type" value="holel" checked>
                         <span class="custom-radio"></span>
                         Гостиница
                       </label>
@@ -139,10 +140,10 @@
                     </li>
                     <li class="filter-item range-scale">
                       <div class="range-bar" style="width: 78%;">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
                       </div>
@@ -169,7 +170,7 @@
             </select>
             <ul class="view-list list">
               <li class="view-item ">
-                <a href="#" class="view-button tile"><span class="visually-hidden">Плиточная раскладка</span></a>
+                <a href="#" class="view-button tile view-active"><span class="visually-hidden">Плиточная раскладка</span></a>
               </li>
               <li class="view-item">
                 <a href="#" class="view-button slideshow"><span class="visually-hidden">Режим презентации</span></a>
@@ -227,7 +228,7 @@
               <span class="score">Рейтинг: 6,9</span>
             </li>
             <li class="results-item">
-              <img src="./images/hotels/hotel-4.jpg" class="results-image" width="300" height="211" width="300" height="211" alt="GreenTree Inn">
+              <img src="./images/hotels/hotel-4.jpg" class="results-image" width="300" height="211" alt="GreenTree Inn">
               <a href="#" class="result-link"><h3 class="results-title">GreenTree Inn</h3></a>
 
               <span class="results-type">Гостиница</span>
@@ -254,17 +255,15 @@
               <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
             </ol>
 
-            <form action="https://echo.htmlacademy.ru/" method="post" class="results-form">
-              <label>
-                Гостиниц на странице:
-                <select class="results-number" name="results-number" id="">
-                  <option value="2">2</option>
-                  <option value="4" selected>4</option>
-                  <option value="6">6</option>
-                  <option value="8">8</option>
-                </select>
-              </label>
-            </form>
+            <label class="results-label" for="select-number">
+              Гостиниц на странице:
+            </label>
+            <select class="results-number" id="select-number" name="results-number">
+              <option value="2">2</option>
+              <option value="4" selected>4</option>
+              <option value="6">6</option>
+              <option value="8">8</option>
+            </select>
           </div>
         </section>
 
@@ -274,8 +273,8 @@
             <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" class="input-text" name="email" placeholder="Ваш e-mail">
-            <button class="button-section button-subscibe" type="submit">Подписаться</button>
+            <input type="email" class="input-text" name="email" placeholder="Ваш e-mail" required>
+            <button class="button-section button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
